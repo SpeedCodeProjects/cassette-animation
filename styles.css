@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe150;
+}
+
+#container {
+  height: 400px;
+}
+
+svg {
+  height: 100%;
+}
+
+#Tape1 {
+  transform-origin: 234px 234px;
+}
+
+#Tape2 {
+  transform-origin: 576px 234px;
+}
+
+#Tape1,
+#Tape2 {
+  animation: tapeAnimation 1s linear infinite;
+}
+
+@keyframes tapeAnimation {
+  from {
+    tranform: rotate(0);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
